@@ -2,6 +2,8 @@
 
 # Glow Maze Run
 
+DEPLOYED LINK - https://mazeeee.netlify.app/
+
 A glowing neon maze game where you control a purple glowing player navigating through a cyan maze to reach the green goal.
 
 ---

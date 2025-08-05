@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glow Maze Run</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="landing-screen" class="screen active">
+  <h1>Glow Maze Run</h1>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<div id="game-screen" class="screen">
+  <div id="info">
+    <div>Time: <span id="timer">0.0</span>s</div>
+    <div>Moves: <span id="moves">0</span></div>
+  </div>
+  <div id="game-container">
+    <canvas id="maze" width="600" height="600"></canvas>
+  </div>
+  <div id="message"></div>
+  <button id="restartBtn">Restart Game</button>
+  <button id="backBtn">Back to Menu</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

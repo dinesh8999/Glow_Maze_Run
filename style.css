@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #0ff;
+  font-family: 'Orbitron', monospace, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  user-select: none;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 4rem;
+  color: #0ff;
+  text-align: center;
+  text-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px #0ff;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.active {
+  display: flex;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #0ff;
+}
+
+#game-container {
+  position: relative;
+  background: #050505;
+  border: 3px solid #0ff;
+  box-shadow:
+    0 0 20px #0ff,
+    inset 0 0 30px #0ff;
+  max-width: 600px;
+  max-height: 600px;
+  aspect-ratio: 1/1;
+}
+
+canvas {
+  display: block;
+  background: #050505;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #0f0;
+  text-shadow:
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 30px #0f0;
+  height: 28px;
+}
+
+button {
+  background: #000;
+  border: 2px solid #0ff;
+  color: #0ff;
+  font-family: 'Orbitron', monospace, sans-serif;
+  font-weight: 700;
+  padding: 12px 28px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow:
+    0 0 15px #0ff,
+    inset 0 0 20px #0ff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, button:focus {
+  background-color: #0ff;
+  color: #000;
+  box-shadow:
+    0 0 25px #0ff,
+    inset 0 0 30px #0ff;
+  outline: none;
+}
